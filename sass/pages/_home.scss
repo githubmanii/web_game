@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+}
+
+.devgame {
+  min-width: 80vw;
+  @include Responsiv(tablet) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "game-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss public/css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss public/css/style.compile.css ",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 version' public/css/style.compile.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^11.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "autoprefixer": "^10.4.19"
+  }
+}

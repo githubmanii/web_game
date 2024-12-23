@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @include Responsiv(laptop) {
+    font-size: 47.5%;
+  }
+
+  @include Responsiv(tablet-L) {
+    font-size: 42.5%;
+  }
+
+  @include Responsiv(tablet) {
+    font-size: 40%;
+  }
+
+  @include Responsiv(phone-L) {
+    font-size: 37.5%;
+  }
+
+  @include Responsiv(phone) {
+    font-size: 35%;
+  }
+}
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: $color-bg;
+  font-family: $font-poppins, $font-rubik;
+}

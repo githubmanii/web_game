@@ -1,0 +1,176 @@
+// !Start Sidebar Styles
+.sidebar {
+  min-width: 30rem;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: $color-primary;
+  padding-bottom: 2.5rem;
+  z-index: 12;
+  @include Responsiv(tablet) {
+    width: 50vw;
+    position: fixed;
+    top: 0;
+    left: -100rem;
+    max-width: 33%;
+  }
+  @include Responsiv(phone-L) {
+    min-width: 50vw;
+  }
+  // !playtoo Sidebar Styles
+  &__playtoo {
+    padding: 2.5rem;
+    @include centerizeTag();
+    flex-direction: column;
+
+    &-pic {
+      width: 64%;
+    }
+    &-text {
+      color: $color-white;
+      font-size: $font-size-title;
+      font-family: $font-poppins;
+    }
+  }
+  // !filter Sidebar Styles
+  &__filter {
+    border-bottom: solid 0.3rem $color-black;
+
+    &-title {
+      width: 95%;
+      padding: 2.5rem;
+      background-color: $color-secondry;
+      border-radius: 0 0.7rem 0.7rem 0;
+    }
+    &-title-text {
+      color: $color-white;
+      display: block;
+      text-align: right;
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+    }
+    &-list {
+      width: 100%;
+    }
+    &-items {
+      width: 100%;
+      margin: 1.5rem auto;
+    }
+    &-item {
+      width: 100%;
+      padding: 2.5rem 0;
+      @include centerizeTag();
+      gap: 1rem;
+      opacity: 0.6;
+      color: $color-filter;
+      transition: all 350ms ease-in-out;
+      &:hover {
+        color: $color-white;
+        cursor: pointer;
+        opacity: 1;
+      }
+    }
+    &-icon {
+      width: 3.3rem;
+      height: 3.7rem;
+      background: url(../../public/images/sidebar-slider.png);
+      background-size: cover;
+      background-position: -2.9rem 0;
+      & --1 {
+        background-position: 4.5rem 0;
+      }
+      &--2 {
+        background-position: 15.1rem 0;
+      }
+      &--3 {
+        background-position: 3.8rem 0;
+      }
+      &--4 {
+        background-position: 9.3rem 0;
+      }
+      &--5 {
+        background-position: 6.4rem 0;
+      }
+    }
+    &-description {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+  // !friends Sidebar Styles
+  &__friends {
+    padding: 2.5rem;
+
+    &-content {
+      margin: 1rem auto;
+    }
+    &-head {
+      width: 100%;
+      color: $color-white;
+    }
+    &-items {
+      margin-top: 2.5rem;
+      width: 100%;
+    }
+    &-item {
+      @include centerizeTag(space-between);
+      margin-bottom: 1.5rem;
+    }
+    &-info {
+      @include centerizeTag(flex-start);
+      gap: 1rem;
+    }
+    &-image {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      border: 0.1rem solid silver;
+      object-fit: cover;
+    }
+    &-pic {
+      width: 100%;
+      height: 100%;
+    }
+    &-text {
+      color: $color-filter;
+      font-size: 1.5rem;
+    }
+    &-icon {
+      display: block;
+      color: $color-filter;
+    }
+
+    &-circle {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+      background-color: green;
+      display: block;
+    }
+    &-box {
+      width: 5rem;
+      @include centerizeTag();
+    }
+  }
+  // !rocket Sidebar Styles
+  &__rocket {
+    width: 80%;
+    margin: 1.5rem auto;
+    overflow: hidden;
+    transition: all 350ms ease-in;
+
+    &:hover {
+      border: solid 0.5rem $color-secondry;
+      cursor: pointer;
+      border-radius: 1.4rem;
+      @include centerizeTag();
+    }
+
+    &-img {
+      width: 100%;
+      border-radius: 1.4rem;
+    }
+  }
+}

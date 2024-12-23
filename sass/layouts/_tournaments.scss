@@ -1,0 +1,599 @@
+.tournaments {
+  margin-top: 2.5rem;
+  width: $main-width;
+  @include Responsiv(tablet-L) {
+    width: auto;
+  }
+
+  // !Tournaments Content Section
+  &__content {
+    width: 90%;
+    margin: 0 auto;
+
+    &-main {
+      width: 70vw;
+      height: 80rem;
+      margin-top: 2.5rem;
+      @include centerizeTag(space-between, flex-start);
+      @include Responsiv(tablet-L) {
+        @include centerizeTag();
+        flex-direction: column;
+        height: auto;
+        margin: 4rem auto;
+      }
+    }
+
+    //! Tournaments Battel start
+
+    &-left {
+      width: 70%;
+      min-height: 100%;
+      border-radius: 1rem;
+      margin: 0 auto;
+      @include Responsiv(tablet-L) {
+        height: auto;
+        width: 70vw;
+        margin: 0;
+      }
+      @include Responsiv(tablet) {
+        width: 85vw;
+      }
+    }
+  }
+
+  // !Tournaments Battle Section
+  &__battle {
+    background-color: #202938;
+    @include centerizeTag(space-between);
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    @include Responsiv(phone) {
+      flex-direction: column;
+    }
+    &-left {
+      width: 70%;
+      height: 100%;
+      @include centerizeTag();
+      flex-direction: column;
+    }
+
+    &-final {
+      width: 100%;
+      @include Responsiv(phone) {
+        display: none;
+      }
+      &-mobile {
+        display: none;
+        @include Responsiv(phone) {
+          @include centerizeTag();
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    }
+    &-header {
+      color: $color-white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      @include Responsiv(phone) {
+        font-display: 3.5rem;
+      }
+    }
+    &-text {
+      color: $color-green;
+      font-size: 1.9rem;
+      font-weight: bold;
+      @include Responsiv(phone) {
+        font-size: 2.9rem;
+      }
+    }
+    &-teams {
+      width: 90%;
+      height: 20rem;
+      @include centerizeTag(space-between);
+      margin-top: 5rem;
+      @include Responsiv(phone) {
+        width: 60vw;
+        height: auto;
+        @include centerizeTag();
+      }
+    }
+    &-team {
+      margin: 0;
+    }
+    &-boxcircle {
+      width: 11rem;
+      height: 11rem;
+      border-radius: 100%;
+      @include centerizeTag();
+      box-shadow: 0 0 2rem $color-box-shadow;
+      &--1 {
+        background-image: conic-gradient(#ff2b28 25%, #e73bf3 0);
+      }
+      &--2 {
+        background-image: conic-gradient(red 17%, $color-blue-precent 0);
+        width: 15rem;
+        height: 15rem;
+      }
+      &--3 {
+        background-image: conic-gradient(#eca819 65%, $color-blue-precent 0);
+      }
+    }
+    &-circle {
+      width: 95%;
+      height: 95%;
+      border-radius: 100%;
+      @include centerizeTag();
+      &--1 {
+        background: radial-gradient(
+          circle,
+          #9c091c 0,
+          #e31c3b 50%,
+          #323676 100%
+        );
+      }
+      &--2 {
+        background: radial-gradient(
+          circle,
+          #0658c6 0,
+          #0c678a 50%,
+          #000307 100%
+        );
+      }
+      &--3 {
+        background: radial-gradient(
+          circle,
+          #eca819 0,
+          #eca819 50%,
+          #000307 100%
+        );
+      }
+    }
+    &-img {
+      width: 55%;
+      object-fit: cover;
+    }
+    &-details {
+      @include centerizeTag();
+      flex-direction: column;
+      margin-top: 2.5rem;
+    }
+    &-details-title {
+      font-size: $font-size-default;
+      font-weight: bold;
+      color: $color-white;
+    }
+    &-details-subtitle {
+      font-size: 1.3rem;
+      color: $color-subtitle;
+      font-weight: bold;
+    }
+    &-sword {
+      width: 4rem;
+    }
+    &-progress {
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 1.5rem;
+      background-color: $color-bg;
+      margin-top: 3rem;
+      &-1 {
+        @include Responsiv(tablet-L) {
+          display: none;
+        }
+      }
+      &-precent {
+        width: 70%;
+        height: 100%;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+        @include centerizeTag();
+        font-weight: bold;
+        background: linear-gradient(
+          120deg,
+          $color-orange-precent 52%,
+          $color-blue-precent 70%
+        );
+      }
+    }
+
+    // ! this is right BATTLE
+
+    &-right {
+      width: 35%;
+      height: 100%;
+      margin-left: 3rem;
+      @include Responsiv(phone) {
+        width: 65vw;
+        height: auto;
+        margin: 5rem auto;
+      }
+
+      &-thead {
+        width: 100%;
+        height: 3.7rem;
+        @include centerizeTag(space-between);
+      }
+
+      &-icon {
+        width: 4rem;
+        height: 100%;
+        background-color: $color-secondry;
+        padding: 1.1rem 1.1rem;
+        border-radius: 0.5rem;
+        color: $color-white;
+        font-weight: bold;
+        @include centerizeTag();
+        font-size: $font-size-default;
+      }
+      &-group {
+        width: 72%;
+        height: 100%;
+        background-color: $color-secondry;
+        @include centerizeTag();
+        color: $color-white;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+
+    &-body {
+      margin: 0;
+    }
+    &-items {
+      width: 100%;
+      height: 100%;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #111a23;
+      height: 5rem;
+      width: 101%;
+      border-radius: 0.6rem;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      transition: all 200ms ease-in;
+      &.active {
+        background-color: $color-red;
+        .tournaments__battle-number,
+        .tournaments__battle-score {
+          background-color: $color-red-dark;
+        }
+      }
+      &:hover {
+        background-color: $color-red-light;
+        cursor: pointer;
+        .tournaments__battle-number,
+        .tournaments__battle-score {
+          background-color: $color-red-dark;
+        }
+      }
+    }
+
+    &-kings {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    &-rate {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    &-number,
+    &-score {
+      background-color: #202938;
+      color: $color-white;
+      font-size: 1.3rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.6rem 1.4rem;
+      font-weight: bold;
+    }
+    &-image {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+    &-nameteam {
+      font-weight: bold;
+      font-size: 1.9rem;
+      color: $color-white;
+    }
+    &-coins {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+
+    &-count {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.9rem;
+    }
+  }
+
+  // !Tournaments Info Section
+  &__info {
+    @include centerizeTag();
+    flex-direction: column;
+    &-item {
+      background-color: #202938;
+      margin-top: 2.5rem;
+      width: 49vw;
+      height: auto;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      @include centerizeTag(space-between);
+      position: relative;
+      overflow: hidden;
+      @include Responsiv(tablet-L) {
+        width: 70vw;
+      }
+      @include Responsiv(tablet) {
+        width: 85vw;
+      }
+    }
+    &-game {
+      @include centerizeTag(flex-start);
+      width: 27%;
+      gap: 1rem;
+    }
+    &-disscreption {
+      @include centerizeTag(center, flex-start);
+      flex-direction: column;
+      gap: 1rem;
+      @include Responsiv(phone) {
+        display: none;
+      }
+      &-1 {
+        @include centerizeTag(center, flex-start);
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+    &-image {
+      margin: 0;
+    }
+    &-pic {
+      width: 8rem;
+    }
+    &-team {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.9rem;
+    }
+    &-people {
+      color: $color-subtitle;
+      font-size: 1.9rem;
+      font-weight: bold;
+    }
+    &-name {
+      color: $color-subtitle;
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: "";
+        width: 0.2rem;
+        height: 10rem;
+        background-color: $color-subtitle;
+        position: absolute;
+        left: -5rem;
+        top: -2.3rem;
+        transform: rotate(22deg);
+        @include Responsiv(phone) {
+          display: none;
+        }
+      }
+    }
+    &-key {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.9rem;
+    }
+    &-value {
+      margin: 0;
+      font-size: 1.9rem;
+    }
+    &-precent {
+      width: 5rem;
+    }
+    &-bg {
+      width: 15rem;
+      height: 98%;
+      position: absolute;
+      @include centerizeTag();
+      top: 0;
+      right: 0;
+      clip-path: polygon(
+        17rem -7.87%,
+        5.1rem -15.2%,
+        0.02% 102.35%,
+        17.1rem 103.34%
+      );
+      background: linear-gradient(
+        110deg,
+        $color-purple 0,
+        $color-purple 28%,
+        $color-purple-light 28%,
+        $color-purple-light 100%
+      );
+      font-family: $font-rubik;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.5rem;
+      &.bg2 {
+        background: linear-gradient(
+          110deg,
+          $color-secondry-light 0,
+          $color-secondry-light 28%,
+          $color-secondry 28%,
+          $color-secondry 100%
+        );
+      }
+    }
+
+    &-more {
+      width: 49vw;
+      padding: 1.5rem 0;
+      background-color: $color-secondry;
+      border-radius: 1rem;
+      @include centerizeTag();
+      margin-top: 2.5rem;
+      transition: all 200ms ease-in;
+      &:hover {
+        background-color: $color-secondry-light;
+        cursor: pointer;
+      }
+      @include Responsiv(tablet-L) {
+        width: 70vw;
+      }
+    }
+    &-link {
+      font-size: $font-size-default;
+      color: $color-white;
+      font-weight: bold;
+    }
+  }
+
+  //!----- Tournaments Styles Closing---
+  &__closing {
+    padding: 2.5rem;
+    background-color: $color-primary;
+    width: 27%;
+    height: 90%;
+    border-radius: 1rem;
+    @include Responsiv(tablet-L) {
+      width: 70vw;
+      height: 100%;
+      @include centerizeTag(space-between, flex-start);
+      margin-top: 3rem;
+      overflow-x: scroll;
+      cursor: grab;
+    }
+
+    &-titles {
+      margin: 0;
+    }
+    &-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      width: 80%;
+      line-height: 3.3rem;
+    }
+    &-subtitle {
+      color: $color-green;
+      font-size: $font-size-default;
+      font-weight: bold;
+    }
+    &-items {
+      margin-top: 2.5rem;
+      @include centerizeTag(space-between, flex-start);
+      @include Responsiv(tablet-L) {
+        gap: 5rem;
+        margin-right: 5rem;
+        &-scrolls {
+          display: none;
+          @include Responsiv(tablet-L) {
+            display: flex;
+            gap: 4rem;
+            margin-right: 4rem;
+            @include centerizeTag();
+          }
+        }
+      }
+    }
+    &-item {
+      margin-bottom: 2.5rem;
+      &-scrolls2 {
+        display: none;
+        @include Responsiv(tablet-L) {
+          display: flex;
+          @include centerizeTag();
+        }
+      }
+    }
+    &-teams {
+      margin: 0;
+    }
+    &-team {
+      @include centerizeTag();
+      flex-direction: column;
+    }
+
+    &-names {
+      @include centerizeTag();
+      flex-direction: column;
+      margin-top: 2.5rem;
+    }
+    &-name {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $color-white;
+      margin-bottom: 0.7rem;
+    }
+    &-number {
+      color: $color-subtitle;
+      font-size: 1.9rem;
+      font-weight: bold;
+    }
+    &-scores {
+      position: relative;
+      top: -14.7rem;
+      right: 1.9rem;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem;
+      @include Responsiv(tablet-L) {
+        right: 3.9rem;
+      }
+    }
+    &-progress {
+      margin-bottom: 3rem;
+      margin-top: 0;
+    }
+    &-link {
+      width: 100%;
+      margin-top: 4.5rem;
+      @include centerizeTag();
+      padding: 2.5rem 0;
+      background: linear-gradient(
+        to right,
+        $color-orange-precent,
+        $color-blue-precent,
+        $color-orange-precent,
+        $color-blue-precent,
+        $color-orange-precent,
+        $color-blue-precent
+      );
+      cursor: pointer;
+      border-radius: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all 200ms ease-in;
+      color: $color-black;
+      &:hover {
+        background: linear-gradient(
+          to right,
+          $color-orange-precent,
+          $color-orange-precent,
+          $color-blue-precent,
+          $color-blue-precent
+        );
+        letter-spacing: 0.4rem;
+      }
+    }
+  }
+}

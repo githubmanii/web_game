@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Game-Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="public/images/clash-of-clans-hd-icon-0.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" >
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,700&family=Poppins:wght@300;500;700&family=Rubik:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <main class="main">
+    <!--! sidebar start -->
+    <section class="sidebar">
+      <div id="CLOSE">
+        <i class="fas fa-close header__item-close-icon"></i>
+    </div>
+      <!--! sidebar playtoo  -->
+      <div class="sidebar__playtoo">
+        <img class="sidebar__playtoo-pic" src="public/images/forever.png" alt="">
+        <h2 class="sidebar__playtoo-text">playtoo</h2>
+
+      </div>
+      <!--! sidebar filter  -->
+      <div class="sidebar__filter">
+        <div class="sidebar__filter-title">
+          <span class="sidebar__filter-title-text">FILTER BY PLATFORM</span>
+        </div>
+        <div class="sidebar__filter-list">
+          <ul class="sidebar__filter-items">
+            <li class="sidebar__filter-item">
+              <i class="sidebar__filter-icon
+              sidebar__filter-icon--1">
+              </i>
+              <span class="sidebar__filter-description">POPULAR STREAMS</span>
+            </li>
+            <li class="sidebar__filter-item">
+              <i class="sidebar__filter-icon
+              sidebar__filter-icon--2">
+              </i>
+              <span class="sidebar__filter-description">POPULAR STREAMS</span>
+            </li>
+            <li class="sidebar__filter-item">
+              <i class="sidebar__filter-icon
+              sidebar__filter-icon--3">
+              </i>
+              <span class="sidebar__filter-description">POPULAR STREAMS</span>
+            </li>
+            <li class="sidebar__filter-item">
+              <i class="sidebar__filter-icon
+              sidebar__filter-icon--4">
+              </i>
+              <span class="sidebar__filter-description">POPULAR STREAMS</span>
+            </li>
+
+            <li class="sidebar__filter-item">
+              <i class="sidebar__filter-icon
+              sidebar__filter-icon--5">
+              </i>
+              <span class="sidebar__filter-description">POPULAR STREAMS</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <!--! sidebar friends  -->
+       <div class="sidebar__friends">
+        <div class="sidebar__friends-content">
+          <h2 class="sidebar__friends-head">Friends</h2>
+          <ul class="sidebar__friends-items">
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+              <i class="fas fa-wifi sidebar__friends-icon"></i>
+            </div>
+            </li>
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+             <span class="sidebar__friends-circle"></span>
+            </div>
+            </li>
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+              <i class="fas fa-wifi sidebar__friends-icon"></i>
+            </div>
+            </li>
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+             <span class="sidebar__friends-circle"></span>
+            </div>
+            </li>
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+              <i class="fas fa-wifi sidebar__friends-icon"></i>
+            </div>
+            </li>
+            <li class="sidebar__friends-item">
+              <div class="sidebar__friends-info">
+                <span class="sidebar__friends-image">
+                  <img class="sidebar__friends-pic" src="public/images/pic-user.png" alt="">
+                </span>
+                <span class="sidebar__friends-text">resident 123</span>
+              </div>
+              <div class="sidebar__friends-box">
+             <span class="sidebar__friends-circle"></span>
+            </div>
+            </li>
+            
+          </ul>
+        </div>
+       </div>
+       <!--! Sidebar Rocket -->
+       <div class="sidebar__rocket">
+        <img class="sidebar__rocket-img" src="public/images/RocketLeage.avif" alt="">
+       </div>
+      </section>
+     
+    <!--! Devgame Start -->
+    <section class="devgame">
+      
+      <!--! Header start  -->
+      <header class="header">
+       <div class="header__content">
+        <div id="GLOBAL">
+          <i class="fa-solid fa-globe "></i>
+        </div>
+        <div class="header__content-user">
+            <div class="header__content-search">
+          <input placeholder="Search..." class="header__content-input">
+          <span class="header__content-circle">
+            <i class="fas fa-search header__content-icon"></i>
+          </span> 
+        </div>
+        <div class="header__content-bell">
+          <span class="header__content-bell-circle">12</span>
+          <i class=" header__content-bell-icon fas fa-bell"></i>
+        </div>
+        <div class="header__content-user">
+          <span class="header__content-user-text">Mani.Mohajer</span>
+        </div>
+        <div class="header__content-user-pic">
+          <img src="public/images/pic-user.png" class="header__content-user-img" >
+        </div>
+      </div>
+      </div>
+      </header>
+      <!--! Header End  -->
+
+      <!--! Slider start -->
+      <section class="slider">
+        <div class="slider__content">
+          <img class="slider__content-img" src="public/images/slider-image.webp" alt="">
+        </div>
+    </section>
+    <!--! Slider End -->
+
+    <!-- !Devgame Popular Sections Start -->
+    <section class="popular">
+      <div class="popular__content">
+        <!--!Devgame _ Title  sections -->
+        <div class="devtitle">
+         <h1 class="devtitle__title">
+            <span class="text-white">POPULAR</span>
+            <span class="text-pink">STREAMS</span>
+          </h1>
+          <ul class="devtitle__list">
+            <li class="devtitle__item">NEW</li>
+            <li class="devtitle__item active">WINNERS</li>
+            <li class="devtitle__item">SPEICAL EVENTS</li>
+            <li class="devtitle__item">MUSIC STREAMING</li>
+          </ul>
+        </div>
+        <!--!Devgame Popular Content sections -->
+        <div class="popular__content-items">
+          <div class="popular__content-item">
+            <div class="popular__content-image">
+              <img class="popular__content-pic" src="public/images/popular1 .webp" alt="">
+            </div>
+            <div class="popular__content-info">
+              <div class="popular__content-left">
+                <span class="popular__content-title">CLASH WARZ GAME</span> 
+                <p class="popular__content-description">
+                  watch the unique battel of the two most two powerfully teams
+                </p>
+                <div class="popular__content-lists">
+                  <span class="popular__content-circle">
+                    <span class="popular__contenttiny"></span>
+                  </span>
+                  <span class="popular__content-rate">5.568</span>
+                  <span class="popular__content-online">watch online</span>
+                </div>
+              </div>
+              <div class="popular__content-right">
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon1.webp" alt="">
+                  <span class="popular__content-team">KINGS SELETON</span>
+                </div>
+                <div class="popular__content-score">2*2</div>
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon2.webp" alt="">
+                <span class="popular__content-team">DEREAMS TEAM</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__content-item">
+            <div class="popular__content-image">
+              <img class="popular__content-pic" src="public/images/popular3.webp" alt="">
+              <div class="popular__content-shape
+              popular__content-shape--1">
+                ONLINE
+            </div>
+            <div class="popular__content-shape
+            popular__content-shape--2"></div>
+          </div>
+            <div class="popular__content-info">
+              <div class="popular__content-left">
+                <span class="popular__content-title">CLASH WARZ GAME</span> 
+                <p class="popular__content-description">
+                  watch the unique battel of the two most two powerfully teams
+                </p>
+                <div class="popular__content-lists">
+                  <span class="popular__content-circle"></span>
+                  <span class="popular__content-rate">5.568</span>
+                  <span class="popular__content-online">watch online</span>
+                </div>
+              </div>
+              <div class="popular__content-right">
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon1.webp " alt="">
+                  <span class="popular__content-team">KINGS SELETON</span>
+                </div>
+                <div class="popular__content-score">2*2</div>
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon2.webp" alt="">
+                <span class="popular__content-team">DEREAMS TEAM</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular__content-item">
+            <div class="popular__content-image">
+              <img class="popular__content-pic" src="public/images/popular3.webp" alt="">
+            </div>
+            <div class="popular__content-info">
+              <div class="popular__content-left">
+                <span class="popular__content-title">CLASH WARZ GAME</span> 
+                <p class="popular__content-description">
+                  watch the unique battel of the two most two powerfully teams
+                </p>
+                <div class="popular__content-lists">
+                  <span class="popular__content-circle"></span>
+                  <span class="popular__content-rate">5.568</span>
+                  <span class="popular__content-online">watch online</span>
+                </div>
+              </div>
+              <div class="popular__content-right">
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon1.webp" alt="">
+                  <span class="popular__content-team">KINGS SELETON</span>
+                </div>
+                <div class="popular__content-score">2*2</div>
+                <div class="popular__content-match">
+                  <img class="popular__content-logo" src="public/images/team-icon2.webp" alt="">
+                <span class="popular__content-team">DEREAMS TEAM</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- !Devgame Popular Sections End-->
+
+      <!--!Devgame BEST Sections Start -->
+    <section class="best">
+      <div class="best__content">
+         <!--!Devgame _ Title  sections -->
+         <div class="devtitle"> 
+          <h1 class="devtitle__title">
+             <span class="text-white">BEST</span>
+             <span class="text-pink">STREAMS</span>
+           </h1>
+           <ul class="devtitle__btns">
+            <li class="devtitle__btn active">
+             <i class="fas fa-chevron-left dev-title__icon"></i>
+            </li>
+            <li class="devtitle__btn">
+              <i class="fas fa-chevron-right dev-title__icon"></i>
+            </li>
+           </ul>
+         </div>
+         <!-- !Best content section  -->
+        <div class="best__content-main" >
+          <div class="best__content-item">
+            <div class="best__content-number best__content-number--1"></div>
+            <div class="best__content-pic">
+              <img class="best__content-img" src="public/images/user1.webp" alt="">
+            </div>
+            <div class="best__content-info">
+              <span class="best__content-info-title">ALEX ADAMS</span>
+              <div class="best__content-info-alluser">
+              <span class="best__content-info-alluser-position">Yourposition:</span>
+              <span class="best__content-info-alluser-rate">#10</span>
+            </div>
+            </div>
+          </div>
+          <div class="best__content-item">
+            <div class="best__content-number best__content-number--2"></div>
+            <div class="best__content-pic">
+              <img class="best__content-img" src="public/images/user2.png" alt="">
+            </div>
+            <div class="best__content-info">
+              <span class="best__content-info-title">ALEX ADAMS</span>
+              <div class="best__content-info-alluser">
+              <span class="best__content-info-alluser-position">Yourposition:</span>
+              <span class="best__content-info-alluser-rate">#10</span>
+            </div>
+            </div>
+          </div>
+          <div class="best__content-item">
+            <div class="best__content-number best__content-number--3"></div>
+            <div class="best__content-pic">
+              <img class="best__content-img" src="public/images/user3.webp" alt="">
+            </div>
+            <div class="best__content-info">
+              <span class="best__content-info-title">ALEX ADAMS</span>
+              <div class="best__content-info-alluser">
+              <span class="best__content-info-alluser-position">Yourposition:</span>
+              <span class="best__content-info-alluser-rate">#10</span>
+            </div>
+            </div>
+          </div>
+          <div class="best__content-item">
+            <div class="best__content-number best__content-number--4"></div>
+            <div class="best__content-pic">
+              <img class="best__content-img" src="public/images/user4.webp" alt="">
+            </div>
+            <div class="best__content-info">
+              <span class="best__content-info-title">ALEX ADAMS</span>
+              <div class="best__content-info-alluser">
+              <span class="best__content-info-alluser-position">Yourposition:</span>
+              <span class="best__content-info-alluser-rate">#10</span>
+            </div>
+            </div>
+          </div>
+          <div class="best__content-item">
+            <div class="best__content-number best__content-number--5"></div>
+            <div class="best__content-pic">
+              <img class="best__content-img" src="public/images/user5.webp" alt="">
+            </div>
+            <div class="best__content-info">
+              <span class="best__content-info-title">ALEX ADAMS</span>
+              <div class="best__content-info-alluser">
+              <span class="best__content-info-alluser-position">Yourposition:</span>
+              <span class="best__content-info-alluser-rate">#10</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--!Devgame BEST Sections End -->
+
+    <!--! Devgame Tournaments Section Start -->
+    <section class="tournaments">
+      <div class="tournaments__content">
+        <div class="devtitle"> 
+          <h1 class="devtitle__title">
+             <span class="text-white">RECENT</span>
+             <span class="text-pink">TOURNAMESTS</span>
+           </h1>
+         </div>
+    <!--! Devgame Tournaments Content Section Start -->
+        <div class="tournaments__content-main">
+        <div class="tournaments__content-left">
+          <div class="tournaments__battle">
+            <div class="tournaments__battle-final-mobile">
+              <h1 class="tournaments__battle-header">FINAL BATTLE</h1>
+              <span class="tournaments__battle-text">the best players of the tournaments</span>
+            </div>
+            <div class="tournaments__battle-left">
+            <div class="tournaments__battle-final">
+              <h1 class="tournaments__battle-header">FINAL BATTLE</h1>
+              <span class="tournaments__battle-text">the best players of the tournaments</span>
+            </div>
+                <!--! Devgame Tournaments Teams Section Start -->
+            <div class="tournaments__battle-teams">
+              <div class="tournaments__battle-team">
+                <div class="tournaments__battle-boxcircle
+                tournaments__battle-boxcircle--1">
+                  <div class="tournaments__battle-circle 
+                  tournaments__battle-circle--1">
+                    <img class="tournaments__battle-img" src="public/images/team5.webp" alt="">
+                  </div>
+                </div>
+                <div class="tournaments__battle-details">
+                  <span class="tournaments__battle-details-title">DRAGONS</span>
+                  <span class="tournaments__battle-details-subtitle">3team</span>
+                </div>
+              </div>
+              <img class="tournaments__battle-sword" src="public/images/sward.png" alt="">
+              <div class="tournaments__battle-team">
+                <div class="tournaments__battle-boxcircle
+                tournaments__battle-boxcircle--2">
+                  <div class="tournaments__battle-circle 
+                  tournaments__battle-circle--2">
+                    <img class="tournaments__battle-img" src="public/images/team4.webp" alt="">
+                  </div>
+                </div>
+                <div class="tournaments__battle-details">
+                  <span class="tournaments__battle-details-title">DRAGONS</span>
+                  <span class="tournaments__battle-details-subtitle">3team</span>
+                </div>
+              </div>
+              <img class="tournaments__battle-sword" src="public/images/sward.png" alt="">
+              <div class="tournaments__battle-team">
+                <div class="tournaments__battle-boxcircle
+                tournaments__battle-boxcircle--3">
+                  <div class="tournaments__battle-circle 
+                  tournaments__battle-circle--3">
+                    <img class="tournaments__battle-img" src="public/images/team1.webp" alt="">
+                  </div>
+                </div>
+                <div class="tournaments__battle-details">
+                  <span class="tournaments__battle-details-title">DRAGONS</span>
+                  <span class="tournaments__battle-details-subtitle">3team</span>
+                </div>
+              </div>
+            </div>
+                <!--! Devgame Tournaments progess Section Start -->
+                <div class="tournaments__battle-progress">
+                  <div class="tournaments__battle-progress-precent">70%</div>
+                </div>
+              </div>
+              
+                <!--! Devgame Tournaments Battle Right  -->
+                <div class="tournaments__battle-right">
+                  <div class="tournaments__battle-right-thead">
+                    <span class="tournaments__battle-right-icon"><i class="fas fa-chevron-left "></i></span>
+                    <span class="tournaments__battle-right-group">GROUP D</span>
+                    <span class="tournaments__battle-right-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                  <div class="tournaments__battle-body">
+                    <ul class="tournaments__battle-items">
+                      <li class="tournaments__battle-item active">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item ">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt=""> 
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                      <li class="tournaments__battle-item">
+                        <div class="tournaments__battle-kings">
+                          <span class="tournaments__battle-number ">1</span>
+                          <img class="tournaments__battle-image" src="public/images/team-icon1.webp" alt="">
+                          <span class="tournaments__battle-nameteam">KINGS TEAM</span>
+                        </div>
+                        <div class="tournaments__battle-rate">
+                          <img class="tournaments__battle-coins" src="public/images/coins.png" alt="">
+                          <span class="tournaments__battle-count">182</span>
+                          <span class="tournaments__battle-score ">5.2</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--! Devgame Tournaments Info section  -->
+          <div class="tournaments__info">
+            <div class="tournaments__info-item">
+              <div class="tournaments__info-game">
+                <div class="tournaments__info-image">
+                  <img class="tournaments__info-pic" src="public/images/callofduty.webp" alt="">
+                </div>
+                <div class="tournaments__info-disscreption-1">
+                <span class="tournaments__info-team">CALL OF DUTY</span>
+                <span class="tournaments__info-people">22people</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">TIME</span>
+                <span class="tournaments__info-value">22:18:35</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">DATE</span>
+                <span class="tournaments__info-value">2023/10/10</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">EXPREITON DATE</span>
+                <span class="tournaments__info-value">2023/11/11</span>
+              </div>
+              </div>
+              <div class="tournaments__info-precent">
+                <div class="tournaments__info-bg">
+                  <span class="tournaments__info-bg-text">77%</span>
+                </div>
+              </div>
+            </div>
+            <div class="tournaments__info-item">
+              <div class="tournaments__info-game">
+                <div class="tournaments__info-image">
+                  <img class="tournaments__info-pic" src="public/images/clash.webp" alt="">
+                </div>
+                <div class="tournaments__info-disscreption-1">
+                <span class="tournaments__info-team">CALL OF DUTY</span>
+                <span class="tournaments__info-people">22people</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">TIME</span>
+                <span class="tournaments__info-value">22:18:35</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">DATE</span>
+                <span class="tournaments__info-value">2023/10/10</span>
+              </div>
+              </div>
+              <div class="tournaments__info-name">
+                <div class="tournaments__info-disscreption">
+                <span class="tournaments__info-key">EXPREITON DATE</span>
+                <span class="tournaments__info-value">2023/11/11</span>
+              </div>
+              </div>
+              <div class="tournaments__info-precent">
+                <div class="tournaments__info-bg bg2">
+                  <span class="tournaments__info-bg-text">67%</span>
+                </div>
+              </div>
+            </div>
+            <a  href="#" class="tournaments__info-more">
+              <span class="tournaments__info-link">SHOW  MORE</span>
+            </a>
+          </div>
+        </div>
+          <!--! Devgame Tournaments closing   -->
+        <div class="tournaments__closing">
+          <div class="tournaments__closing-titles">
+            <h2 class="tournaments__closing-title">CLOSING TOURNAMENTS </h2>
+            <span class="tournaments__closing-subtitle"> PLAY OF BATTLES </span>
+          </div>
+          <div class="tournaments__closing-items">
+            <div class="tournaments__closing-item">
+              <div class="tournaments__closing-teams">
+                <div class="tournaments__closing-team">
+                  <div class="tournaments__battle-boxcircle
+                  tournaments__battle-boxcircle--1">
+                    <div class="tournaments__battle-circle 
+                    tournaments__battle-circle--1">
+                      <img class="tournaments__battle-img" src="public/images/team2.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-names">
+                    <span class="tournaments__closing-name">SKELETONS</span>
+                    <span class="tournaments__closing-number">2 Numbers</span>
+                  </div>
+                </div>
+                <div class="tournaments__closing-scores"></div>
+              </div>
+            </div>
+            <div class="tournaments__closing-item">
+              <div class="tournaments__closing-teams">
+                <div class="tournaments__closing-team">
+                  <div class="tournaments__battle-boxcircle
+                  tournaments__battle-boxcircle--1">
+                    <div class="tournaments__battle-circle 
+                    tournaments__battle-circle--1">
+                      <img class="tournaments__battle-img" src="public/images/team3.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-names">
+                    <span class="tournaments__closing-name">SKELETONS</span>
+                    <span class="tournaments__closing-number">2 Numbers</span>
+                  </div>
+                </div>
+                <div class="tournaments__closing-scores">
+                  <span>0:2</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="tournaments__battle-progress-1">
+              <div class="tournaments__battle-progress-precent">70%</div>
+            </div>
+            <div class="tournaments__closing-items">
+              <div class="tournaments__closing-item">
+                <div class="tournaments__closing-teams">
+                  <div class="tournaments__closing-team">
+                    <div class="tournaments__battle-boxcircle
+                    tournaments__battle-boxcircle--1">
+                      <div class="tournaments__battle-circle 
+                      tournaments__battle-circle--1">
+                        <img class="tournaments__battle-img" src="public/images/team1.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="tournaments__closing-names">
+                      <span class="tournaments__closing-name">SKELETONS</span>
+                      <span class="tournaments__closing-number">2 Numbers</span>
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-scores"></div>
+                </div>
+              </div>
+              <div class="tournaments__closing-item">
+                <div class="tournaments__closing-teams">
+                  <div class="tournaments__closing-team">
+                    <div class="tournaments__battle-boxcircle
+                    tournaments__battle-boxcircle--1">
+                      <div class="tournaments__battle-circle 
+                      tournaments__battle-circle--1">
+                        <img class="tournaments__battle-img" src="public/images/team6.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="tournaments__closing-names">
+                      <span class="tournaments__closing-name">SKELETONS</span>
+                      <span class="tournaments__closing-number">2 Numbers</span>
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-scores">
+                    <span>0:2</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="tournaments__battle-progress-1">
+                <div class="tournaments__battle-progress-precent">70%</div>
+              </div>
+               <!-- <div class="tournaments__closing-btn">
+            <a class="tournaments__closing-link" href="">PUT ON THE WINNERS</a>
+          <!-- </div> -->
+          <div class="tournaments__closing-items">
+            <div class="tournaments__closing-item-scrolls2">
+              <div class="tournaments__closing-teams">
+                <div class="tournaments__closing-team">
+                  <div class="tournaments__battle-boxcircle
+                  tournaments__battle-boxcircle--1">
+                    <div class="tournaments__battle-circle 
+                    tournaments__battle-circle--1">
+                      <img class="tournaments__battle-img" src="public/images/team1.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-names">
+                    <span class="tournaments__closing-name">SKELETONS</span>
+                    <span class="tournaments__closing-number">2 Numbers</span>
+                  </div>
+                </div>
+                <div class="tournaments__closing-scores"></div>
+              </div>
+            </div>
+            <div class="tournaments__closing-item-scrolls2">
+              <div class="tournaments__closing-teams">
+                <div class="tournaments__closing-team">
+                  <div class="tournaments__battle-boxcircle
+                  tournaments__battle-boxcircle--1">
+                    <div class="tournaments__battle-circle 
+                    tournaments__battle-circle--1">
+                      <img class="tournaments__battle-img" src="public/images/team6.webp" alt="">
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-names">
+                    <span class="tournaments__closing-name">SKELETONS</span>
+                    <span class="tournaments__closing-number">2 Numbers</span>
+                  </div>
+                </div>
+                <div class="tournaments__closing-scores">
+                  <span>0:2</span>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="tournaments__closing-items">
+              <div class="tournaments__closing-item-scrolls2">
+                <div class="tournaments__closing-teams">
+                  <div class="tournaments__closing-team">
+                    <div class="tournaments__battle-boxcircle
+                    tournaments__battle-boxcircle--1">
+                      <div class="tournaments__battle-circle 
+                      tournaments__battle-circle--1">
+                        <img class="tournaments__battle-img" src="public/images/team1.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="tournaments__closing-names">
+                      <span class="tournaments__closing-name">SKELETONS</span>
+                      <span class="tournaments__closing-number">2 Numbers</span>
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-scores"></div>
+                </div>
+              </div>
+              <div class="tournaments__closing-item-scrolls2">
+                <div class="tournaments__closing-teams">
+                  <div class="tournaments__closing-team">
+                    <div class="tournaments__battle-boxcircle
+                    tournaments__battle-boxcircle--1">
+                      <div class="tournaments__battle-circle 
+                      tournaments__battle-circle--1">
+                        <img class="tournaments__battle-img" src="public/images/team6.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="tournaments__closing-names">
+                      <span class="tournaments__closing-name">SKELETONS</span>
+                      <span class="tournaments__closing-number">2 Numbers</span>
+                    </div>
+                  </div>
+                  <div class="tournaments__closing-scores">
+                    <span>0:2</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="streams">
+      <div class="streams__content">
+          <!--!Devgame _ Title  sections -->
+          <div class="devtitle">
+            <h1 class="devtitle__title">
+               <span class="text-white">POPULAR</span>
+               <span class="text-pink">STREAMS</span>
+             </h1>
+             <ul class="devtitle__list">
+               <li class="devtitle__item">NEW</li>
+               <li class="devtitle__item active">7 DAYS AGO</li>
+               <li class="devtitle__item">
+                2 DAYS LATTER</li>
+               <li class="devtitle__item">MONTH AGO</li>
+             </ul>
+           </div>
+        <div class="streams__content-main">
+          <div class="streams__content-left">
+            <div class="streams__content-image">
+            <img class="streams__content-img" src="public/images/tournament1.jpeg" alt="">
+            <div class="streams__content-cards"><span class="streams__content-cards-text">NEED FOR SPEED</span></div>
+          </div>
+          <div class="streams__content-discount">10% DISCOUNT</div>
+          </div>
+          <div class="streams__content-right">
+            <div class="streams__content-item">
+              <img src="public/images/tournament2.jpg" alt="">
+              <div class="streams__content-play">
+                <i class="streams__content-play-icon fas fa-play"></i>
+              </div>
+              <div class="streams__content-text">
+                <span class="streams__content-title"> STARS WARS LOGO GAME </span>
+                <span class="streams__content-subtitle"> Your YourPositions: #14 </span>
+              </div>
+            </div>
+            <div class="streams__content-item">
+              <img src="public/images/tournament3.jpeg" alt="">
+              <div class="streams__content-play">
+                <i class="streams__content-play-icon fas fa-play"></i>
+              </div>
+              <div class="streams__content-text">
+                <span class="streams__content-title"> STARS WARS LOGO GAME </span>
+                <span class="streams__content-subtitle"> Your YourPositions: #14 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content-item">
+        <div class="footer__content-image">
+          <img class="footer__content-img" src="public/images/forever.png" alt="">
+          <span class="footer__content-text">PLAY TOO</span>
+        </div>
+      </div>
+      <div class="footer__content-item">
+        <div class="footer__content-socialmedia">
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-youtube"></i>
+          </div>
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-instagram"></i>
+          </div>
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-twitter"></i>
+          </div>
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-telegram"></i>
+          </div>
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-facebook"></i>
+          </div>
+          <div class="footer__content-social">
+            <i class=" footer__content-icon fa-brands fa-whatsapp"></i>
+          </div>
+          
+        </div>
+      </div>
+       <div class="footer__content-item">
+        <ul class="footer__content-lists">
+          <li class="footer__content-list">CONTENT</li>
+          <li class="footer__content-list">
+            FAQ</li>
+          <li class="footer__content-list">SUPPORT</li>
+        </ul>
+      </div>
+      <div class="footer__content-item">
+        <span class="footer__content-copyright">playtoo inc 2021 copyright </span>
+      </div>
+    </div>
+  </footer>
+  <script src="public/js/jquery-3.7.1.min.js"></script>
+  <script src="public/js/main.js"></script>
+  <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+</body>
+</html>
+
+
+
+

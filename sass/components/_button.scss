@@ -1,0 +1,35 @@
+//! ONLINE BUTTON MENU
+@include Responsiv(tablet) {
+  #GLOBAL {
+    width: 3rem;
+    height: 3rem;
+    color: $color-secondry;
+    display: flex !important;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}
+#GLOBAL {
+  display: none;
+}
+//! CLOSE BUTTON
+@include Responsiv(tablet) {
+  #CLOSE {
+    width: 3.3rem;
+    color: $color-secondry;
+    border-radius: 5rem;
+    border: solid $color-secondry 0.2rem;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    padding: 0.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    height: 3.3rem;
+    font-size: 2rem;
+  }
+}

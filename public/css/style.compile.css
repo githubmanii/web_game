@@ -1,0 +1,1700 @@
+.text-white {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.text-pink {
+  color: #ff04ab;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 112.5em) {
+    html {
+      font-size: 47.5%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 42.5%; } }
+  @media only screen and (max-width: 62em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 37.5%; } }
+  @media only screen and (max-width: 36em) {
+    html {
+      font-size: 35%; } }
+
+ul,
+li {
+  padding: 0;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  background-color: #111a23;
+  font-family: "P-oppins", sans-serif, "Rubik", sans-serif; }
+
+.sidebar {
+  min-width: 30rem;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #202938;
+  padding-bottom: 2.5rem;
+  z-index: 12; }
+  @media only screen and (max-width: 62em) {
+    .sidebar {
+      width: 50vw;
+      position: fixed;
+      top: 0;
+      left: -100rem;
+      max-width: 33%; } }
+  @media only screen and (max-width: 48em) {
+    .sidebar {
+      min-width: 50vw; } }
+  .sidebar__playtoo {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .sidebar__playtoo-pic {
+      width: 64%; }
+    .sidebar__playtoo-text {
+      color: #fff;
+      font-size: 2.5rem;
+      font-family: "P-oppins", sans-serif; }
+  .sidebar__filter {
+    border-bottom: solid 0.3rem #000; }
+    .sidebar__filter-title {
+      width: 95%;
+      padding: 2.5rem;
+      background-color: #0761dc;
+      border-radius: 0 0.7rem 0.7rem 0; }
+    .sidebar__filter-title-text {
+      color: #fff;
+      display: block;
+      text-align: right;
+      font-size: 1.7rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem; }
+    .sidebar__filter-list {
+      width: 100%; }
+    .sidebar__filter-items {
+      width: 100%;
+      margin: 1.5rem auto; }
+    .sidebar__filter-item {
+      width: 100%;
+      padding: 2.5rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      opacity: 0.6;
+      color: #504e4e;
+      transition: all 350ms ease-in-out; }
+      .sidebar__filter-item:hover {
+        color: #fff;
+        cursor: pointer;
+        opacity: 1; }
+    .sidebar__filter-icon {
+      width: 3.3rem;
+      height: 3.7rem;
+      background: url(../../public/images/sidebar-slider.png);
+      background-size: cover;
+      background-position: -2.9rem 0; }
+      .sidebar__filter-icon --1 {
+        background-position: 4.5rem 0; }
+      .sidebar__filter-icon--2 {
+        background-position: 15.1rem 0; }
+      .sidebar__filter-icon--3 {
+        background-position: 3.8rem 0; }
+      .sidebar__filter-icon--4 {
+        background-position: 9.3rem 0; }
+      .sidebar__filter-icon--5 {
+        background-position: 6.4rem 0; }
+    .sidebar__filter-description {
+      font-size: 1.6rem;
+      font-weight: bold; }
+  .sidebar__friends {
+    padding: 2.5rem; }
+    .sidebar__friends-content {
+      margin: 1rem auto; }
+    .sidebar__friends-head {
+      width: 100%;
+      color: #fff; }
+    .sidebar__friends-items {
+      margin-top: 2.5rem;
+      width: 100%; }
+    .sidebar__friends-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem; }
+    .sidebar__friends-info {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem; }
+    .sidebar__friends-image {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      border: 0.1rem solid silver;
+      object-fit: cover; }
+    .sidebar__friends-pic {
+      width: 100%;
+      height: 100%; }
+    .sidebar__friends-text {
+      color: #504e4e;
+      font-size: 1.5rem; }
+    .sidebar__friends-icon {
+      display: block;
+      color: #504e4e; }
+    .sidebar__friends-circle {
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 100%;
+      background-color: green;
+      display: block; }
+    .sidebar__friends-box {
+      width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .sidebar__rocket {
+    width: 80%;
+    margin: 1.5rem auto;
+    overflow: hidden;
+    transition: all 350ms ease-in; }
+    .sidebar__rocket:hover {
+      border: solid 0.5rem #0761dc;
+      cursor: pointer;
+      border-radius: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .sidebar__rocket-img {
+      width: 100%;
+      border-radius: 1.4rem; }
+
+.header {
+  width: 100%; }
+  .header__content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.9rem; }
+    @media only screen and (max-width: 62em) {
+      .header__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+    .header__content-user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+    .header__content-search {
+      position: relative;
+      display: flex; }
+      @media only screen and (max-width: 48em) {
+        .header__content-search {
+          display: none; } }
+    .header__content-input {
+      background-color: #202938;
+      color: #fff;
+      width: 40rem;
+      height: 100%;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.8rem 3rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: all 280ms ease-in; }
+      .header__content-input:hover {
+        background-color: #0761dc; }
+    .header__content-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 100%;
+      background-color: #0761dc;
+      position: absolute;
+      top: 0;
+      right: 0; }
+    .header__content-icon {
+      color: #fff; }
+    .header__content-bell {
+      width: 4.5rem;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .header__content-bell-icon {
+        font-size: 2.5rem;
+        color: #fff; }
+      .header__content-bell-circle {
+        background-color: #0761dc;
+        color: #fff;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        position: absolute;
+        top: -0.5rem;
+        right: 0.7rem;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    .header__content-user {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header__content-user-text {
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .header__content-user-pic {
+        width: 4.5rem;
+        height: 4.5rem;
+        border: solid 0.1rem #0761dc;
+        border-radius: 100%; }
+      .header__content-user-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.slider {
+  width: 100%;
+  height: 55rem; }
+  .slider__content {
+    width: 100%;
+    height: 100%; }
+    .slider__content-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.popular {
+  width: 100%;
+  padding: 2.5rem 0; }
+  .popular__content {
+    width: 90%;
+    margin: 0 auto;
+    height: auto; }
+    .popular__content-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.7rem 1rem; }
+      @media only screen and (max-width: 48em) {
+        .popular__content-items {
+          flex-wrap: wrap;
+          margin: 3rem auto;
+          gap: 3rem; } }
+    .popular__content-item {
+      width: 32%;
+      margin: 0 auto;
+      height: auto; }
+      @media only screen and (max-width: 48em) {
+        .popular__content-item {
+          width: 91%; } }
+    .popular__content-image {
+      width: 100%;
+      height: auto;
+      background-color: #202938;
+      border-radius: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 200ms cubic-bezier(0.76, -0.08, 0.74, 1.44); }
+      .popular__content-image:hover {
+        cursor: pointer;
+        transform: translateY(-1rem);
+        border: 0.5rem solid #ff04ab; }
+    .popular__content-pic {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.8rem;
+      object-fit: cover; }
+    .popular__content-shape {
+      width: 55%;
+      height: 100%;
+      background-color: #0761dc;
+      position: absolute;
+      top: 0;
+      right: 0;
+      clip-path: polygon(100.9% -0.1rem, 100% 100%, 2.6rem 100%, 35% 0px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: all 810ms ease-in; }
+      .popular__content-shape:hover {
+        width: 100%;
+        cursor: pointer;
+        opacity: 1; }
+      .popular__content-shape--1 {
+        z-index: 10;
+        color: #fff;
+        font-size: 2.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold; }
+      .popular__content-shape--2 {
+        right: 1rem;
+        background-color: #ff04ab; }
+    .popular__content-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1.5rem 0;
+      width: 100%; }
+      @media only screen and (max-width: 48em) {
+        .popular__content-info {
+          margin: 2rem auto;
+          font-size: 2rem; } }
+    .popular__content-left {
+      margin: 0 auto;
+      width: 100%; }
+    .popular__content-title {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: bold; }
+    .popular__content-description {
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 1.5rem 0;
+      font-weight: bold;
+      line-height: 3rem; }
+    .popular__content-lists {
+      width: 100%;
+      gap: 1.5rem;
+      font-size: 1.1rem;
+      color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: bold; }
+    .popular__content-circle {
+      background-color: #13bf04;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 1.8rem #13bf04; }
+      .popular__content-circle-tiny {
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 100%;
+        background-color: #13bf04; }
+    .popular__content-rate, .popular__content-online {
+      font-size: 2.1rem;
+      color: #fff; }
+    .popular__content-right {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin: 0 auto;
+      font-size: 2rem; }
+    .popular__content-match {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+    .popular__content-logo {
+      width: 1.5rem; }
+    .popular__content-team {
+      color: #fff;
+      font-weight: bold; }
+    .popular__content-score {
+      color: #ffa500;
+      font-weight: bold; }
+
+.best {
+  width: 100%;
+  margin: 2.5rem 0; }
+  .best__content {
+    width: 90%;
+    margin: 0 auto; }
+    .best__content-main {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (max-width: 48em) {
+        .best__content-main {
+          flex-wrap: wrap;
+          gap: 4rem; } }
+    .best__content-item {
+      width: 20%;
+      height: auto;
+      position: relative;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media only screen and (max-width: 36em) {
+        .best__content-item {
+          width: 65% !important; } }
+      @media only screen and (max-width: 48em) {
+        .best__content-item {
+          width: 30%; } }
+    .best__content-number {
+      background: url(/public/images/number.png) no-repeat;
+      width: 5.8rem;
+      height: 6.5rem;
+      background-size: 30rem;
+      position: absolute;
+      top: -3.5rem;
+      left: 0.5rem; }
+      .best__content-number--1 {
+        background-position: 1.5rem 0; }
+      .best__content-number--2 {
+        background-position: -5.6rem 0; }
+      .best__content-number--3 {
+        background-position: -10.2rem 0; }
+      .best__content-number--4 {
+        background-position: -17.5rem 0; }
+      .best__content-number--5 {
+        background-position: -24.3rem 0; }
+    .best__content-pic {
+      width: 80%;
+      height: 23rem;
+      border: 0.4rem solid #fff;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      position: relative; }
+      @media only screen and (max-width: 36em) {
+        .best__content-pic {
+          height: 60vw; } }
+    .best__content-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 250ms ease-in; }
+      .best__content-img:hover {
+        cursor: pointer;
+        transform: scale(1.2); }
+    .best__content-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 83%;
+      height: 6.2rem; }
+      .best__content-info-title {
+        color: #fff;
+        font-weight: bold;
+        margin: 0.8rem auto;
+        font-size: 1.8rem; }
+      .best__content-info-alluser-position {
+        color: #707070;
+        font-weight: bold;
+        font-size: 1.8rem; }
+      .best__content-info-alluser-rate {
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.8rem; }
+
+.tournaments {
+  margin-top: 2.5rem;
+  width: 144rem; }
+  @media only screen and (max-width: 75em) {
+    .tournaments {
+      width: auto; } }
+  .tournaments__content {
+    width: 90%;
+    margin: 0 auto; }
+    .tournaments__content-main {
+      width: 70vw;
+      height: 80rem;
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__content-main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          height: auto;
+          margin: 4rem auto; } }
+    .tournaments__content-left {
+      width: 70%;
+      min-height: 100%;
+      border-radius: 1rem;
+      margin: 0 auto; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__content-left {
+          height: auto;
+          width: 70vw;
+          margin: 0; } }
+      @media only screen and (max-width: 62em) {
+        .tournaments__content-left {
+          width: 85vw; } }
+  .tournaments__battle {
+    background-color: #202938;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 36em) {
+      .tournaments__battle {
+        flex-direction: column; } }
+    .tournaments__battle-left {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .tournaments__battle-final {
+      width: 100%; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__battle-final {
+          display: none; } }
+      .tournaments__battle-final-mobile {
+        display: none; }
+        @media only screen and (max-width: 36em) {
+          .tournaments__battle-final-mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem; } }
+    .tournaments__battle-header {
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__battle-header {
+          font-display: 3.5rem; } }
+    .tournaments__battle-text {
+      color: #13bf04;
+      font-size: 1.9rem;
+      font-weight: bold; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__battle-text {
+          font-size: 2.9rem; } }
+    .tournaments__battle-teams {
+      width: 90%;
+      height: 20rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5rem; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__battle-teams {
+          width: 60vw;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
+    .tournaments__battle-team {
+      margin: 0; }
+    .tournaments__battle-boxcircle {
+      width: 11rem;
+      height: 11rem;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 2rem #8383ff; }
+      .tournaments__battle-boxcircle--1 {
+        background-image: conic-gradient(#ff2b28 25%, #e73bf3 0); }
+      .tournaments__battle-boxcircle--2 {
+        background-image: conic-gradient(red 17%, #4719ec 0);
+        width: 15rem;
+        height: 15rem; }
+      .tournaments__battle-boxcircle--3 {
+        background-image: conic-gradient(#eca819 65%, #4719ec 0); }
+    .tournaments__battle-circle {
+      width: 95%;
+      height: 95%;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .tournaments__battle-circle--1 {
+        background: radial-gradient(circle, #9c091c 0, #e31c3b 50%, #323676 100%); }
+      .tournaments__battle-circle--2 {
+        background: radial-gradient(circle, #0658c6 0, #0c678a 50%, #000307 100%); }
+      .tournaments__battle-circle--3 {
+        background: radial-gradient(circle, #eca819 0, #eca819 50%, #000307 100%); }
+    .tournaments__battle-img {
+      width: 55%;
+      object-fit: cover; }
+    .tournaments__battle-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2.5rem; }
+    .tournaments__battle-details-title {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff; }
+    .tournaments__battle-details-subtitle {
+      font-size: 1.3rem;
+      color: #707070;
+      font-weight: bold; }
+    .tournaments__battle-sword {
+      width: 4rem; }
+    .tournaments__battle-progress {
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 1.5rem;
+      background-color: #111a23;
+      margin-top: 3rem; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__battle-progress-1 {
+          display: none; } }
+      .tournaments__battle-progress-precent {
+        width: 70%;
+        height: 100%;
+        font-size: 2rem;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        background: linear-gradient(120deg, #eca819 52%, #4719ec 70%); }
+    .tournaments__battle-right {
+      width: 35%;
+      height: 100%;
+      margin-left: 3rem; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__battle-right {
+          width: 65vw;
+          height: auto;
+          margin: 5rem auto; } }
+      .tournaments__battle-right-thead {
+        width: 100%;
+        height: 3.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+      .tournaments__battle-right-icon {
+        width: 4rem;
+        height: 100%;
+        background-color: #0761dc;
+        padding: 1.1rem 1.1rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem; }
+      .tournaments__battle-right-group {
+        width: 72%;
+        height: 100%;
+        background-color: #0761dc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 2rem; }
+    .tournaments__battle-body {
+      margin: 0; }
+    .tournaments__battle-items {
+      width: 100%;
+      height: 100%; }
+    .tournaments__battle-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #111a23;
+      height: 5rem;
+      width: 101%;
+      border-radius: 0.6rem;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      transition: all 200ms ease-in; }
+      .tournaments__battle-item.active {
+        background-color: #96061c; }
+        .tournaments__battle-item.active .tournaments__battle-number,
+        .tournaments__battle-item.active .tournaments__battle-score {
+          background-color: #710919; }
+      .tournaments__battle-item:hover {
+        background-color: #a4162f;
+        cursor: pointer; }
+        .tournaments__battle-item:hover .tournaments__battle-number,
+        .tournaments__battle-item:hover .tournaments__battle-score {
+          background-color: #710919; }
+    .tournaments__battle-kings {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.5rem; }
+    .tournaments__battle-rate {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 1.5rem; }
+    .tournaments__battle-number, .tournaments__battle-score {
+      background-color: #202938;
+      color: #fff;
+      font-size: 1.3rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.6rem 1.4rem;
+      font-weight: bold; }
+    .tournaments__battle-image {
+      width: 2.3rem;
+      height: 2.3rem; }
+    .tournaments__battle-nameteam {
+      font-weight: bold;
+      font-size: 1.9rem;
+      color: #fff; }
+    .tournaments__battle-coins {
+      width: 2.3rem;
+      height: 2.3rem; }
+    .tournaments__battle-count {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.9rem; }
+  .tournaments__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .tournaments__info-item {
+      background-color: #202938;
+      margin-top: 2.5rem;
+      width: 49vw;
+      height: auto;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      overflow: hidden; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__info-item {
+          width: 70vw; } }
+      @media only screen and (max-width: 62em) {
+        .tournaments__info-item {
+          width: 85vw; } }
+    .tournaments__info-game {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 27%;
+      gap: 1rem; }
+    .tournaments__info-disscreption {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem; }
+      @media only screen and (max-width: 36em) {
+        .tournaments__info-disscreption {
+          display: none; } }
+      .tournaments__info-disscreption-1 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem; }
+    .tournaments__info-image {
+      margin: 0; }
+    .tournaments__info-pic {
+      width: 8rem; }
+    .tournaments__info-team {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.9rem; }
+    .tournaments__info-people {
+      color: #707070;
+      font-size: 1.9rem;
+      font-weight: bold; }
+    .tournaments__info-name {
+      color: #707070;
+      font-weight: bold;
+      position: relative; }
+      .tournaments__info-name::before {
+        content: "";
+        width: 0.2rem;
+        height: 10rem;
+        background-color: #707070;
+        position: absolute;
+        left: -5rem;
+        top: -2.3rem;
+        transform: rotate(22deg); }
+        @media only screen and (max-width: 36em) {
+          .tournaments__info-name::before {
+            display: none; } }
+    .tournaments__info-key {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.9rem; }
+    .tournaments__info-value {
+      margin: 0;
+      font-size: 1.9rem; }
+    .tournaments__info-precent {
+      width: 5rem; }
+    .tournaments__info-bg {
+      width: 15rem;
+      height: 98%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      right: 0;
+      clip-path: polygon(17rem -7.87%, 5.1rem -15.2%, 0.02% 102.35%, 17.1rem 103.34%);
+      background: linear-gradient(110deg, #7e30a0 0, #7e30a0 28%, #d338f8 28%, #d338f8 100%);
+      font-family: "Rubik", sans-serif;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.5rem; }
+      .tournaments__info-bg.bg2 {
+        background: linear-gradient(110deg, #4883d6 0, #4883d6 28%, #0761dc 28%, #0761dc 100%); }
+    .tournaments__info-more {
+      width: 49vw;
+      padding: 1.5rem 0;
+      background-color: #0761dc;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.5rem;
+      transition: all 200ms ease-in; }
+      .tournaments__info-more:hover {
+        background-color: #4883d6;
+        cursor: pointer; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__info-more {
+          width: 70vw; } }
+    .tournaments__info-link {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: bold; }
+  .tournaments__closing {
+    padding: 2.5rem;
+    background-color: #202938;
+    width: 27%;
+    height: 90%;
+    border-radius: 1rem; }
+    @media only screen and (max-width: 75em) {
+      .tournaments__closing {
+        width: 70vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 3rem;
+        overflow-x: scroll;
+        cursor: grab; } }
+    .tournaments__closing-titles {
+      margin: 0; }
+    .tournaments__closing-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      width: 80%;
+      line-height: 3.3rem; }
+    .tournaments__closing-subtitle {
+      color: #13bf04;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    .tournaments__closing-items {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__closing-items {
+          gap: 5rem;
+          margin-right: 5rem; }
+          .tournaments__closing-items-scrolls {
+            display: none; } }
+    @media only screen and (max-width: 75em) and (max-width: 75em) {
+      .tournaments__closing-items-scrolls {
+        display: flex;
+        gap: 4rem;
+        margin-right: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    .tournaments__closing-item {
+      margin-bottom: 2.5rem; }
+      .tournaments__closing-item-scrolls2 {
+        display: none; }
+        @media only screen and (max-width: 75em) {
+          .tournaments__closing-item-scrolls2 {
+            display: flex;
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
+    .tournaments__closing-teams {
+      margin: 0; }
+    .tournaments__closing-team {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+    .tournaments__closing-names {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 2.5rem; }
+    .tournaments__closing-name {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 0.7rem; }
+    .tournaments__closing-number {
+      color: #707070;
+      font-size: 1.9rem;
+      font-weight: bold; }
+    .tournaments__closing-scores {
+      position: relative;
+      top: -14.7rem;
+      right: 1.9rem;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 0.2rem; }
+      @media only screen and (max-width: 75em) {
+        .tournaments__closing-scores {
+          right: 3.9rem; } }
+    .tournaments__closing-progress {
+      margin-bottom: 3rem;
+      margin-top: 0; }
+    .tournaments__closing-link {
+      width: 100%;
+      margin-top: 4.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2.5rem 0;
+      background: linear-gradient(to right, #eca819, #4719ec, #eca819, #4719ec, #eca819, #4719ec);
+      cursor: pointer;
+      border-radius: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all 200ms ease-in;
+      color: #000; }
+      .tournaments__closing-link:hover {
+        background: linear-gradient(to right, #eca819, #eca819, #4719ec, #4719ec);
+        letter-spacing: 0.4rem; }
+
+.streams {
+  width: 100%;
+  padding: 2.5rem 0; }
+  @media only screen and (max-width: 48em) {
+    .streams {
+      margin-bottom: 12rem; } }
+  @media only screen and (max-width: 36em) {
+    .streams {
+      margin-bottom: 0; } }
+  .streams__content {
+    width: 90%;
+    height: auto;
+    margin: 0 auto; }
+    .streams__content-main {
+      width: 100%;
+      height: auto;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      @media only screen and (max-width: 48em) {
+        .streams__content-main {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 4rem; } }
+      @media only screen and (max-width: 36em) {
+        .streams__content-main {
+          gap: 4rem; } }
+    .streams__content-left {
+      width: 70%;
+      height: 50rem;
+      background-color: #202938;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      position: relative;
+      overflow: hidden; }
+      @media only screen and (max-width: 48em) {
+        .streams__content-left {
+          min-width: 76vw;
+          max-height: 48vh; } }
+      @media only screen and (max-width: 36em) {
+        .streams__content-left {
+          min-width: 76vw;
+          max-height: 35.44vh; } }
+    .streams__content-cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      font-size: 3.5rem;
+      opacity: 0.7;
+      transition: all 550ms ease-in;
+      background: linear-gradient(120deg, #4375b2 39%, #a43337 100%);
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 3rem;
+      position: absolute;
+      top: 100%;
+      right: 0; }
+      @media only screen and (max-width: 75em) {
+        .streams__content-cards {
+          font-size: 2.5rem; } }
+      @media only screen and (max-width: 62em) {
+        .streams__content-cards {
+          font-size: 2.5rem; } }
+      .streams__content-cards-text {
+        font-size: 3.5rem; }
+        @media only screen and (max-width: 48em) {
+          .streams__content-cards-text {
+            font-size: 1.9rem; } }
+        @media only screen and (max-width: 36em) {
+          .streams__content-cards-text {
+            font-size: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: -4rem;
+            letter-spacing: 1.9rem; } }
+    .streams__content-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem; }
+      .streams__content-image:hover .streams__content-cards {
+        top: 0;
+        cursor: pointer; }
+      .streams__content-image:hover .streams__content-img {
+        transform: scale(1.2);
+        cursor: pointer; }
+        @media only screen and (max-width: 36em) {
+          .streams__content-image:hover .streams__content-img {
+            transform: none; } }
+    .streams__content-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      transition: all 550ms ease-in; }
+    .streams__content-discount {
+      width: 30rem;
+      height: 5.5rem;
+      background-color: #ffef00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      clip-path: polygon(99.99% 5.6rem, 1.1rem 101.81%, 10rem -0.1rem, 22.5rem -0.2rem);
+      position: absolute;
+      top: 2.1rem;
+      right: -9.9rem;
+      transform: rotate(42deg); }
+    .streams__content-right {
+      width: 28%;
+      height: 50rem; }
+      @media only screen and (max-width: 48em) {
+        .streams__content-right {
+          gap: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 85%;
+          height: auto; } }
+    .streams__content-item {
+      width: 100%;
+      height: auto;
+      background-color: #202938;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      position: relative;
+      transition: all 150ms ease-in; }
+      .streams__content-item:hover {
+        transform: translateY(-1rem); }
+      @media only screen and (max-width: 48em) {
+        .streams__content-item {
+          min-width: 70vw; } }
+      .streams__content-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        filter: brightness(75%);
+        transition: all 250ms ease-in; }
+        .streams__content-item img:hover {
+          cursor: pointer;
+          filter: brightness(110%); }
+    .streams__content-play {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 100%;
+      background-color: #0761dc;
+      box-shadow: 0 0 2rem #8383ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto; }
+      .streams__content-play-icon {
+        color: #fff;
+        font-size: 1.4rem; }
+    .streams__content-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: absolute;
+      top: 2.5rem;
+      left: 2rem; }
+    .streams__content-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4rem; }
+    .streams__content-subtitle {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.7rem; }
+
+.footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202938; }
+  .footer__content {
+    width: 144rem;
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 36em) {
+      .footer__content {
+        flex-direction: column;
+        margin: 2rem 0; } }
+    .footer__content-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.6rem; }
+      @media only screen and (max-width: 48em) {
+        .footer__content-image {
+          display: none; } }
+    .footer__content-img {
+      width: 14rem; }
+    .footer__content-text {
+      font-weight: bold;
+      font-size: 2.1rem;
+      color: #fff; }
+    .footer__content-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.8rem;
+      color: #ccc;
+      font-weight: bold;
+      font-size: 1.9rem; }
+    .footer__content-socialmedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem; }
+    .footer__content-social {
+      width: 5.5rem;
+      height: 5.5rem;
+      background-color: #111a23;
+      box-shadow: 0 0 0.5rem #8383ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      transition: all 250ms ease-in; }
+      .footer__content-social:hover {
+        cursor: pointer;
+        transform: translateY(-0.8rem); }
+        .footer__content-social:hover .footer__content-icon {
+          transform: rotateY(360deg);
+          color: #0761dc; }
+    .footer__content-icon {
+      color: #fff;
+      font-size: 3rem;
+      transition: all 450ms ease-in; }
+    .footer__content-copyright {
+      font-weight: bold;
+      color: #707070;
+      font-size: 1.9rem; }
+      @media only screen and (max-width: 48em) {
+        .footer__content-copyright {
+          display: none; } }
+
+.devtitle {
+  max-width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 75em) {
+    .devtitle {
+      max-width: 100%; } }
+  @media only screen and (max-width: 48em) {
+    .devtitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem; } }
+  .devtitle__title {
+    margin: 0; }
+  .devtitle__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem; }
+  .devtitle__item {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.7rem 0; }
+    .devtitle__item.active {
+      color: #0761dc;
+      font-size: 2rem;
+      font-weight: bold;
+      border-top: 0.3rem #0761dc solid; }
+  .devtitle__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    margin: 0 4rem; }
+  .devtitle__btn {
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: all 200ms cubic-bezier(0.76, -0.08, 0.74, 1.44); }
+    .devtitle__btn:hover {
+      background-color: #ff04ab;
+      cursor: pointer; }
+    .devtitle__btn.active {
+      background-color: #0761dc; }
+    .devtitle__btn:active {
+      background-color: #0761dc;
+      cursor: pointer; }
+  .devtitle__icon {
+    margin: 0; }
+
+@media only screen and (max-width: 62em) {
+  #GLOBAL {
+    width: 3rem;
+    height: 3rem;
+    color: #0761dc;
+    display: flex !important;
+    font-size: 3rem;
+    cursor: pointer; } }
+
+#GLOBAL {
+  display: none; }
+
+@media only screen and (max-width: 62em) {
+  #CLOSE {
+    width: 3.3rem;
+    color: #0761dc;
+    border-radius: 5rem;
+    border: solid #0761dc 0.2rem;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    padding: 0.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    height: 3.3rem;
+    font-size: 2rem; } }
+
+.main {
+  display: flex; }
+
+.devgame {
+  min-width: 80vw; }
+  @media only screen and (max-width: 62em) {
+    .devgame {
+      width: 100%; } }

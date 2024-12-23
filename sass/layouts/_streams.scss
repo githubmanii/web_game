@@ -1,0 +1,204 @@
+//! Devgame stream style
+.streams {
+  width: 100%;
+  padding: 2.5rem 0;
+  @include Responsiv(phone-L) {
+    margin-bottom: 12rem;
+  }
+  @include Responsiv(phone) {
+    margin-bottom: 0;
+  }
+  &__content {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    @include Responsiv(phone-L) {
+    }
+
+    &-main {
+      width: 100%;
+      height: auto;
+      margin: 2rem 0;
+      @include centerizeTag(space-between);
+      @include Responsiv(phone-L) {
+        @include centerizeTag();
+        flex-direction: column;
+        gap: 4rem;
+      }
+      @include Responsiv(phone) {
+        gap: 4rem;
+      }
+    }
+    &-left {
+      width: 70%;
+      height: 50rem;
+      background-color: $color-primary;
+      padding: 2.5rem;
+      border-radius: 1rem;
+      position: relative;
+      overflow: hidden;
+
+      @include Responsiv(phone-L) {
+        min-width: 76vw;
+        max-height: 48vh;
+      }
+      @include Responsiv(phone) {
+        min-width: 76vw;
+        max-height: 35.44vh;
+      }
+    }
+    &-cards {
+      @include centerizeTag();
+      height: 100%;
+      width: 100%;
+      font-size: 3.5rem;
+      opacity: 0.7;
+      transition: all 550ms ease-in;
+      background: linear-gradient(120deg, #4375b2 39%, #a43337 100%);
+      color: $color-white;
+      font-weight: bold;
+      letter-spacing: 3rem;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      @include Responsiv(tablet-L) {
+        font-size: 2.5rem;
+      }
+      @include Responsiv(tablet) {
+        font-size: 2.5rem;
+      }
+      &-text {
+        font-size: 3.5rem;
+        @include Responsiv(phone-L) {
+          font-size: 1.9rem;
+        }
+        @include Responsiv(phone) {
+          font-size: 1.4rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-right: -4rem;
+          letter-spacing: 1.9rem;
+        }
+      }
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+
+      &:hover {
+        .streams__content-cards {
+          top: 0;
+          cursor: pointer;
+        }
+        .streams__content-img {
+          transform: scale(1.2);
+          cursor: pointer;
+          @include Responsiv(phone) {
+            transform: none;
+          }
+        }
+      }
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      object-fit: cover;
+      transition: all 550ms ease-in;
+    }
+    &-discount {
+      width: 30rem;
+      height: 5.5rem;
+      background-color: $color__discount;
+      @include centerizeTag();
+      font-weight: bold;
+      clip-path: polygon(
+        99.99% 5.6rem,
+        1.1rem 101.81%,
+        10rem -0.1rem,
+        22.5rem -0.2rem
+      );
+      position: absolute;
+      top: 2.1rem;
+      right: -9.9rem;
+      transform: rotate(42deg);
+    }
+    &-right {
+      width: 28%;
+      height: 50rem;
+      @include Responsiv(phone-L) {
+        gap: 1rem;
+        @include centerizeTag();
+        flex-direction: column;
+        width: 85%;
+        height: auto;
+      }
+    }
+    &-item {
+      width: 100%;
+      height: auto;
+      background-color: $color-primary;
+      margin-bottom: 2.5rem;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      position: relative;
+      transition: all 150ms ease-in;
+      &:hover {
+        transform: translateY(-1rem);
+      }
+      @include Responsiv(phone-L) {
+        min-width: 70vw;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+        filter: brightness(75%);
+        transition: all 250ms ease-in;
+        &:hover {
+          cursor: pointer;
+          filter: brightness(110%);
+        }
+      }
+    }
+    &-play {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 100%;
+      background-color: $color-secondry;
+      box-shadow: 0 0 2rem $color-box-shadow;
+      @include centerizeTag();
+      @include Center-Position();
+
+      &-icon {
+        color: $color-white;
+        font-size: 1.4rem;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      position: absolute;
+      top: 2.5rem;
+      left: 2rem;
+    }
+    &-title {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    &-subtitle {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+  }
+}

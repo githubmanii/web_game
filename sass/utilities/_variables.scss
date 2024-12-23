@@ -1,0 +1,50 @@
+// !Colors
+
+//! main Colors
+
+$color-primary: #202938;
+$color-secondry: #0761dc;
+$color-secondry-light: #4883d6;
+$color-tertiary: #ff04ab;
+
+//! otherColors
+
+$color-bg: #111a23;
+$color-white: #fff;
+$color-black: #000;
+$color-subtitle: #707070;
+$color-filter: #504e4e;
+$color-green: #13bf04;
+$color-orange: #ffa500;
+$color-orange-light: #f0ae34;
+$color-orange-precent: #eca819;
+$color-blue-precent: #4719ec;
+$color-red: #96061c;
+$color-red-dark: #710919;
+$color-red-light: #a4162f;
+$color-purple: #7e30a0;
+$color-purple-light: #d338f8;
+$color-box-shadow: #8383ff;
+$color__discount: #ffef00;
+
+// !font-size
+
+$font-size-default: 1.6rem;
+$font-size-title: 2.5rem;
+$font-size-sm: 1.1rem;
+$font-size-lg: 2.1rem;
+
+//! font family
+
+$font-sans: "DM Sans", sans-serif;
+$font-poppins: "P-oppins", sans-serif;
+$font-rubik: "Rubik", sans-serif;
+
+// !width
+
+$main-width: 144rem;
+$footer-width: 122rem;
+
+//! transition__cubic-bezear
+
+$transition__hover: all 200ms cubic-bezier(0.76, -0.08, 0.74, 1.44);

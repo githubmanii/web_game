@@ -1,0 +1,64 @@
+.devtitle {
+  max-width: 100%;
+  padding: 0 3rem;
+  @include centerizeTag(space-between);
+  @include Responsiv(tablet-L) {
+    max-width: 100%;
+  }
+  @include Responsiv(phone-L) {
+    @include centerizeTag();
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__list {
+    @include centerizeTag();
+    gap: 7rem;
+  }
+
+  &__item {
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.7rem 0;
+
+    &.active {
+      color: $color-secondry;
+      font-size: 2rem;
+      font-weight: bold;
+      border-top: 0.3rem $color-secondry solid;
+    }
+  }
+  &__btns {
+    @include centerizeTag();
+    gap: 1rem;
+    font-size: 2rem;
+    margin: 0 4rem;
+  }
+  &__btn {
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: all 200ms cubic-bezier(0.76, -0.08, 0.74, 1.44);
+    &:hover {
+      background-color: $color-tertiary;
+      cursor: pointer;
+    }
+    &.active {
+      background-color: $color-secondry;
+    }
+    &:active {
+      background-color: $color-secondry;
+      cursor: pointer;
+    }
+  }
+  &__icon {
+    margin: 0;
+  }
+}
